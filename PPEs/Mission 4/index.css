@@ -1,6 +1,5 @@
 /* BILGER-BAVEREL Axel */
 
-/* Style général */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -8,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Style du conteneur principal */
 .container {
     width: 60%;
     margin: 50px auto;
@@ -19,7 +17,6 @@ body {
     text-align: center;
 }
 
-/* Style du titre et du texte */
 h1 {
     font-size: 2.5em;
     color: #333;
@@ -32,7 +29,6 @@ p {
     margin-bottom: 30px;
 }
 
-/* Style de la navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
