@@ -1,0 +1,41 @@
+/* BILGER-BAVEREL Axel */
+
+/* Style de la carte de visite */
+.carte {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style des titres et du texte */
+.carte h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.carte h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.carte p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Style des liens sociaux */
+.social a {
+    text-decoration: none;
+    color: #4CAF50;
+    margin: 0 10px;
+}
+
+.social a:hover {
+    color: #45a049;
+}
