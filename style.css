@@ -1,0 +1,112 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background: url('Portfolio BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    animation: fadeInBackground 2s ease-in-out, zoomBackground 5s ease-in-out infinite alternate;
+}
+
+/* Animation de fond */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomBackground {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 105%;
+    }
+}
+
+/* Style de la navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Style du contenu */
+.content {
+    text-align: center;
+    margin-top: 100px; /* Pour compenser la hauteur de la barre de navigation */
+    animation: fadeInText 3s ease-in-out;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style pour le texte principal */
+h1 {
+    font-size: 2.5em;
+    opacity: 0;
+    animation: appear 2s 1s forwards; /* L'animation commence après un délai de 1 seconde */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style de la liste de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}

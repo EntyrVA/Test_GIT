@@ -1,0 +1,130 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background: url('../Portfolio BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    animation:zoomBackground 5s ease-in-out infinite alternate;
+}
+
+/* Animation de fond */
+@keyframes zoomBackground {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 105%;
+    }
+}
+
+/* Style de la navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style de la liste de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Conteneur global */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    text-align: center;
+    padding-top: 50px; /* Ajoute un peu de padding pour descendre le contenu légèrement */
+}
+
+/* Style pour le texte principal */
+h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 150px; /* Espace entre le texte et les boutons */
+    margin-top: -250px; /* Remonte le texte vers le haut */
+    opacity: 0;
+    animation: appear 2s 1s forwards; /* L'animation commence après un délai de 1 seconde */
+}
+
+/* Conteneur des boutons */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement les liens */
+    gap: 20px; /* Espace entre les boutons */
+    margin-top: -50px; /* Remonte les boutons */
+}
+
+/* Style des bulles de liens */
+.bubble-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Effet au survol */
+.bubble-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* Animation d'apparition */
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
