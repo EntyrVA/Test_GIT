@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: burlywood;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Pour occuper l'espace entre header et footer */
+}
+
+.block1, .block2, .block3 {
+    background-color: blanchedalmond;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    justify-content: flex-start; /* Placer le contenu en haut */
+    text-align: center;
+    align-items: center;
+    padding-top: 20px; /* Espacement optionnel en haut */
+    border: 3px solid #000; /* Ajout d'une bordure noire autour des blocs */
+    border-radius: 10px; /* Optionnel : bordures arrondies */
+}
+
+.titre {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    padding: 20px;
+    font-size: 40px;
+    border: 3px solid #000; /* Ajout d'une bordure noire autour des blocs */
+    border-radius: 10px; /* Optionnel : bordures arrondies */
+}
+
+p {
+    padding: 10px;
+}
+
+img {
+    max-width: 80%;  /* Rétrécit l'image à 80% de la largeur disponible */
+    max-height: 80%; /* Rétrécit l'image à 80% de la hauteur disponible */
+    margin: auto;    /* Garde l'image centrée */
+    display: block;  /* Pour s'assurer que l'image est traitée comme un bloc */
+    border: 3px solid #000; /* Ajout d'une bordure noire autour des blocs */
+    border-radius: 10px; /* Optionnel : bordures arrondies */
+}
