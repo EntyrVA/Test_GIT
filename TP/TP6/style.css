@@ -1,0 +1,17 @@
+/* BILGER-BAVEREL Axel */
+
+.identification {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.identivication h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
