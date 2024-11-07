@@ -83,7 +83,7 @@ h1 {
     font-size: 2.5em;
     color: white;
     margin-bottom: 150px; /* Espace entre le texte et les boutons */
-    margin-top: -250px; /* Remonte le texte vers le haut */
+    margin-top: -80px; /* Remonte le texte vers le haut */
     opacity: 0;
     animation: appear 2s 1s forwards; /* L'animation commence après un délai de 1 seconde */
 }
