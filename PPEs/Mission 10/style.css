@@ -1,0 +1,192 @@
+/* Définir des couleurs de base neutres */
+:root {
+    --primary-color: #4f4f4f;
+    --secondary-color: #b0b0b0;
+    --background-color: #f4f4f4;
+    --highlight-color: #9e9e9e;
+    --accent-color: #e5e5e5;
+    --button-bg: #007BFF;
+    --button-text-color: #fff;
+    --border-radius: 8px;
+}
+
+/* Style global du corps */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Conteneur de la facture */
+.invoice-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+}
+
+/* En-tête de la facture */
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--highlight-color);
+    padding-bottom: 20px;
+}
+
+.company-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-info address {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.invoice-details {
+    text-align: right;
+}
+
+.invoice-details h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.invoice-date {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+/* Détails du destinataire */
+.recipient-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.to-recipient, .send-to {
+    width: 45%;
+}
+
+h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+address {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Table de la facture */
+.invoice-table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+td {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    background-color: #f9f9f9;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: var(--primary-color);
+    background-color: #fff;
+}
+
+/* Boutons */
+.invoice-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Résumé de la facture */
+.invoice-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 14px;
+}
+
+.invoice-summary p {
+    margin: 10px 0;
+}
+
+.invoice-summary h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+/* Remise et TVA */
+.discount input {
+    width: 80px;
+    margin-left: 10px;
+}
+
+#remise-total, #taxe-total, #solde-total {
+    font-weight: bold;
+}
+
+/* Dernière ligne de la table */
+.last-row td {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 16px;
+    color: var(--secondary-color);
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Animation de transition pour les inputs */
+input {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}

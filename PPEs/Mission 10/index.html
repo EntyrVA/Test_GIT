@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="invoice-container">
+        <header class="invoice-header">
+            <section class="company-info">
+                <h1>Nom de la société</h1>
+                <address>
+                    <p>Adresse de la société</p>
+                    <p>Contact: email@domaine.com</p>
+                </address>
+            </section>
+            <section class="invoice-details">
+                <h2>Facture</h2>
+                <p class="invoice-date" id="date-facture"></p>
+            </section>
+        </header>
+
+        <div class="recipient-details">
+            <div class="to-recipient">
+                <h3>Pour</h3>
+                <address>
+                    <p>Nom</p>
+                    <p>Nom de la société</p>
+                    <p>Adresse postale</p>
+                    <p>Téléphone</p>
+                    <p>Email</p>
+                </address>
+            </div>
+            <div class="send-to">
+                <h3>Envoyé à</h3>
+                <address>
+                    <p>Nom</p>
+                    <p>Nom de la société</p>
+                    <p>Adresse postale</p>
+                    <p>Téléphone</p>
+                    <p>Email</p>
+                </address>
+            </div>
+        </div>
+
+        <section class="invoice-table">
+            <table id="table_inv">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantité</th>
+                        <th>Prix unitaire (€)</th>
+                        <th>Total (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="line" id="modeleLigne">
+                        <td><input type="text" class="desc" placeholder="Description"></td>
+                        <td><input type="number" class="qte" min="0" value="0"></td>
+                        <td><input type="number" class="prix" min="0" step="0.01" value="0.00"></td>
+                        <td><input type="text" class="total" readonly value="0.00"></td>
+                    </tr>
+                    <tr class="last-row" id="lastligne">
+                        <td colspan="4">Notes supplémentaires et instructions de paiement</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="invoice-buttons">
+            <button id="ajouter-ligne">Ajouter une ligne</button>
+            <button id="remplir-auto">Remplir automatiquement</button>
+            <button id="calculer">Calculer</button>
+            <button id="annuler">Annuler</button>
+        </div>
+
+        <section class="invoice-summary">
+            <p>Sous-total : <span id="sous-total">0.00</span> €</p>
+            <div class="discount">
+                <label for="remise">Remise : </label>
+                <input type="number" id="remise" value="10" step="1" min="0"> %
+            </div>
+            <p>Sous-total après remise : <span id="remise-total">0.00</span> €</p>
+            <p>Taux de TVA : 10.00 %</p>
+            <p>Montant TVA : <span id="taxe-total">0.00</span> €</p>
+            <p>Frais d'expédition : 5.00 €</p>
+            <h3>Total à payer : <span id="solde-total">0.00</span> €</h3>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

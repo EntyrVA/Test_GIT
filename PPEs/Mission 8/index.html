@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Exercices Mathématiques Interactifs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="content">
+    <h1>15 Exercices Mathématiques Interactifs</h1>
+    <table>
+        <tr>
+            <th>Exercice</th>
+            <th>Actions</th>
+        </tr>
+
+        <!-- Exercice 1 -->
+        <tr>
+            <td>1. Addition de deux nombres</td>
+            <td>
+                <button onclick="additionner()">Vérifier</button>
+                <button onclick="afficherCode('code1')">Afficher le code</button>
+                <div id="code1" class="code-box">
+<pre>
+function additionner() {
+    const a = parseFloat(prompt("Entrez le premier nombre :"));
+    const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+    alert(`La somme est : ${a + b}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 2 -->
+        <tr>
+            <td>2. Soustraction de deux nombres</td>
+            <td>
+                <button onclick="soustraire()">Vérifier</button>
+                <button onclick="afficherCode('code2')">Afficher le code</button>
+                <div id="code2" class="code-box">
+<pre>
+function soustraire() {
+    const a = parseFloat(prompt("Entrez le premier nombre :"));
+    const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+    alert(`La différence est : ${a - b}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 3 -->
+        <tr>
+            <td>3. Multiplication de deux nombres</td>
+            <td>
+                <button onclick="multiplier()">Vérifier</button>
+                <button onclick="afficherCode('code3')">Afficher le code</button>
+                <div id="code3" class="code-box">
+<pre>
+function multiplier() {
+    const a = parseFloat(prompt("Entrez le premier nombre :"));
+    const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+    alert(`Le produit est : ${a * b}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 4 -->
+        <tr>
+            <td>4. Division de deux nombres</td>
+            <td>
+                <button onclick="diviser()">Vérifier</button>
+                <button onclick="afficherCode('code4')">Afficher le code</button>
+                <div id="code4" class="code-box">
+<pre>
+function diviser() {
+    const a = parseFloat(prompt("Entrez le premier nombre :"));
+    const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+    if (b !== 0) {
+        alert(`Le quotient est : ${a / b}`);
+    } else {
+        alert("Division par zéro impossible.");
+    }
+}
+</pre>
+
+<!-- Exercice 5 -->
+<tr>
+    <td>5. Carré d'un nombre</td>
+    <td>
+        <button onclick="carre()">Vérifier</button>
+        <button onclick="afficherCode('code5')">Afficher le code</button>
+        <div id="code5" class="code-box">
+<pre>
+function carre() {
+const a = parseFloat(prompt("Entrez un nombre :"));
+alert(`Le carré est : ${a * a}`);
+}
+</pre>
+        </div>
+    </td>
+</tr>
+
+<!-- Exercice 6 -->
+<tr>
+    <td>6. Racine carrée d'un nombre</td>
+    <td>
+        <button onclick="racineCarree()">Vérifier</button>
+        <button onclick="afficherCode('code6')">Afficher le code</button>
+        <div id="code6" class="code-box">
+<pre>
+function racineCarree() {
+const a = parseFloat(prompt("Entrez un nombre :"));
+alert(`La racine carrée est : ${Math.sqrt(a)}`);
+}
+</pre>
+        </div>
+    </td>
+</tr>
+
+<!-- Exercice 7 -->
+<tr>
+    <td>7. Puissance d'un nombre</td>
+    <td>
+        <button onclick="puissance()">Vérifier</button>
+        <button onclick="afficherCode('code7')">Afficher le code</button>
+        <div id="code7" class="code-box">
+<pre>
+function puissance() {
+const a = parseFloat(prompt("Entrez la base :"));
+const b = parseFloat(prompt("Entrez l'exposant :"));
+alert(`Le résultat est : ${Math.pow(a, b)}`);
+}
+</pre>
+
+        <!-- Exercice 8 -->
+        <tr>
+            <td>8. Calcul du carré d'un nombre</td>
+            <td>
+                <button onclick="calculerCarre()">Calculer</button>
+                <button onclick="afficherCode('code8')">Afficher le code</button>
+                <div id="code8" class="code-box">
+<pre>
+function calculerCarre() {
+    const nombre = parseFloat(prompt("Entrez un nombre :"));
+    alert(`Le carré de ${nombre} est ${nombre * nombre}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 9 -->
+        <tr>
+            <td>9. Calcul du cube d'un nombre</td>
+            <td>
+                <button onclick="calculerCube()">Calculer</button>
+                <button onclick="afficherCode('code9')">Afficher le code</button>
+                <div id="code9" class="code-box">
+<pre>
+function calculerCube() {
+    const nombre = parseFloat(prompt("Entrez un nombre :"));
+    alert(`Le cube de ${nombre} est ${nombre ** 3}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 10 -->
+        <tr>
+            <td>10. Vérifier si un nombre est premier</td>
+            <td>
+                <button onclick="verifierNombrePremier()">Vérifier</button>
+                <button onclick="afficherCode('code10')">Afficher le code</button>
+                <div id="code10" class="code-box">
+<pre>
+function verifierNombrePremier() {
+    const nombre = parseInt(prompt("Entrez un nombre :"));
+    let estPremier = nombre > 1;
+    for (let i = 2; i < nombre; i++) {
+        if (nombre % i === 0) {
+            estPremier = false;
+            break;
+        }
+    }
+    alert(`${nombre} est ${estPremier ? '' : 'pas'} un nombre premier.`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 11 -->
+        <tr>
+            <td>11. Calcul de la somme des chiffres d'un nombre</td>
+            <td>
+                <button onclick="sommeChiffres()">Calculer</button>
+                <button onclick="afficherCode('code11')">Afficher le code</button>
+                <div id="code11" class="code-box">
+<pre>
+function sommeChiffres() {
+    const nombre = prompt("Entrez un nombre :");
+    const somme = nombre.split('').reduce((acc, chiffre) => acc + parseInt(chiffre), 0);
+    alert(`La somme des chiffres de ${nombre} est ${somme}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 12 -->
+        <tr>
+            <td>12. Trouver le PGCD de deux nombres</td>
+            <td>
+                <button onclick="trouverPGCD()">Trouver</button>
+                <button onclick="afficherCode('code12')">Afficher le code</button>
+                <div id="code12" class="code-box">
+<pre>
+function trouverPGCD() {
+    let a = parseInt(prompt("Entrez le premier nombre :"));
+    let b = parseInt(prompt("Entrez le deuxième nombre :"));
+    while (b) {
+        [a, b] = [b, a % b];
+    }
+    alert(`Le PGCD est ${a}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 13 -->
+        <tr>
+            <td>13. Calcul du PPCM de deux nombres</td>
+            <td>
+                <button onclick="trouverPPCM()">Trouver</button>
+                <button onclick="afficherCode('code13')">Afficher le code</button>
+                <div id="code13" class="code-box">
+<pre>
+function trouverPPCM() {
+    const a = parseInt(prompt("Entrez le premier nombre :"));
+    const b = parseInt(prompt("Entrez le deuxième nombre :"));
+    const ppcm = (a * b) / trouverPGCD(a, b);
+    alert(`Le PPCM est ${ppcm}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 14 -->
+        <tr>
+            <td>14. Générer un nombre aléatoire</td>
+            <td>
+                <button onclick="genererNombreAleatoire()">Générer</button>
+                <button onclick="afficherCode('code14')">Afficher le code</button>
+                <div id="code14" class="code-box">
+<pre>
+function genererNombreAleatoire() {
+    alert(`Nombre aléatoire : ${Math.floor(Math.random() * 100)}`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Exercice 15 -->
+        <tr>
+            <td>15. Vérifier si un nombre est un carré parfait</td>
+            <td>
+                <button onclick="verifierCarreParfait()">Vérifier</button>
+                <button onclick="afficherCode('code15')">Afficher le code</button>
+                <div id="code15" class="code-box">
+<pre>
+function verifierCarreParfait() {
+    const nombre = parseInt(prompt("Entrez un nombre :"));
+    alert(`${nombre} est ${Number.isInteger(Math.sqrt(nombre)) ? '' : 'pas'} un carré parfait.`);
+}
+</pre>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <a href="../index.html"><button>Retour</button></a>
+</div>
+
+<script>
+     function afficherCode(id) {
+        const codeBox = document.getElementById(id);
+        codeBox.style.display = codeBox.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function additionner() {
+        const a = parseFloat(prompt("Entrez le premier nombre :"));
+        const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+        alert(`La somme est : ${a + b}`);
+    }
+
+    function soustraire() {
+        const a = parseFloat(prompt("Entrez le premier nombre :"));
+        const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+        alert(`La différence est : ${a - b}`);
+    }
+
+    function multiplier() {
+        const a = parseFloat(prompt("Entrez le premier nombre :"));
+        const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+        alert(`Le produit est : ${a * b}`);
+    }
+
+    function diviser() {
+        const a = parseFloat(prompt("Entrez le premier nombre :"));
+        const b = parseFloat(prompt("Entrez le deuxième nombre :"));
+        if (b !== 0) {
+            alert(`Le quotient est : ${a / b}`);
+        } else {
+            alert("Division par zéro impossible.");
+        }
+    }
+
+    function carre() {
+        const a = parseFloat(prompt("Entrez un nombre :"));
+        alert(`Le carré est : ${a * a}`);
+    }
+
+    function racineCarree() {
+        const a = parseFloat(prompt("Entrez un nombre :"));
+        alert(`La racine carrée est : ${Math.sqrt(a)}`);
+    }
+
+    function puissance() {
+        const a = parseFloat(prompt("Entrez la base :"));
+        const b = parseFloat(prompt("Entrez l'exposant :"));
+        alert(`Le résultat est : ${Math.pow(a, b)}`);
+    }
+
+    function calculerCarre() {
+    const nombre = parseFloat(prompt("Entrez un nombre :"));
+    alert(`Le carré de ${nombre} est ${nombre * nombre}`);
+    }
+
+    function calculerCube() {
+    const nombre = parseFloat(prompt("Entrez un nombre :"));
+    alert(`Le cube de ${nombre} est ${nombre ** 3}`);
+    }
+
+    function verifierNombrePremier() {
+    const nombre = parseInt(prompt("Entrez un nombre :"));
+    let estPremier = nombre > 1;
+    for (let i = 2; i < nombre; i++) {
+        if (nombre % i === 0) {
+            estPremier = false;
+            break;
+        }
+    }
+    alert(`${nombre} est ${estPremier ? '' : 'pas'} un nombre premier.`);
+    }
+
+function sommeChiffres() {
+    const nombre = prompt("Entrez un nombre :");
+    const somme = nombre.split('').reduce((acc, chiffre) => acc + parseInt(chiffre), 0);
+    alert(`La somme des chiffres de ${nombre} est ${somme}`);
+    }
+
+function trouverPGCD() {
+    let a = parseInt(prompt("Entrez le premier nombre :"));
+    let b = parseInt(prompt("Entrez le deuxième nombre :"));
+    while (b) {
+        [a, b] = [b, a % b];
+    }
+    alert(`Le PGCD est ${a}`);
+    }
+
+function trouverPPCM() {
+    const a = parseInt(prompt("Entrez le premier nombre :"));
+    const b = parseInt(prompt("Entrez le deuxième nombre :"));
+    const ppcm = (a * b) / trouverPGCD(a, b);
+    alert(`Le PPCM est ${ppcm}`);
+    }
+
+function genererNombreAleatoire() {
+    alert(`Nombre aléatoire : ${Math.floor(Math.random() * 100)}`);
+    }
+
+function verifierCarreParfait() {
+    const nombre = parseInt(prompt("Entrez un nombre :"));
+    alert(`${nombre} est ${Number.isInteger(Math.sqrt(nombre)) ? '' : 'pas'} un carré parfait.`);
+    }
+</script>
+
+</body>
+</html>

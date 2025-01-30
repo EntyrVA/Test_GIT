@@ -1,0 +1,71 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(Warhammer.gif);
+    background-size: cover;  /* L'image couvre toute la surface de l'écran */
+    background-position: center;  /* Centre l'image dans la fenêtre */
+    background-repeat: no-repeat;  /* Empêche l'image de se répéter */
+    color: #ffffff4d;
+    padding: 20px;
+  }
+  
+  .content {
+    background-color: #ffffff3b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffffff9d;
+  }
+  
+  /* Correction */
+  .correction {
+    margin-bottom: 20px;
+  }
+  
+  .correction p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .correction strong {
+    color: #ffffff9d;
+  }
+  
+  /* Bouton Retour */
+  .actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #388e3c;
+  }
