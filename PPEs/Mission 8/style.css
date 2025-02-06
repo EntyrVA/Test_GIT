@@ -1,67 +1,85 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    color: white;
-    text-align: center;
-    background-image: url("Portfolio BG.jpg");
-}
-
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .content {
-    position: relative;
-    z-index: 1;
+    background: white;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2em;
+    color: #333;
     margin-bottom: 20px;
 }
 
 table {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
 }
 
 th, td {
-    padding: 15px;
-    border: 1px solid #444;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
 }
 
-button {
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
+th {
+    background-color: #4CAF50;
     color: white;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+td button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+td button:hover {
+    background-color: #005f7f;
 }
 
 .code-box {
-    background-color: #333;
-    color: #f1f1f1;
-    padding: 15px;
-    border-radius: 5px;
-    font-family: monospace;
-    margin-top: 10px;
     display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
     text-align: left;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+a button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+a button:hover {
+    background-color: #c0392b;
 }
